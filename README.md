@@ -29,3 +29,4 @@
    We first show the linear equation, and then show the MSE equation, and how gradients require forward pass.
    Testing with different learning rates.
    Also added an early stop wherein if gradient step becomes too close to zero, ie < 1e-6, we can stop training before 1000 epochs
+
