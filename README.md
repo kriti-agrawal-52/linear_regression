@@ -23,3 +23,10 @@
    Features in training and testing set were scaled using StandardScalar and then multicollinearity was checked using VIF. The features with high VIF were pruned over the original non-scaled training and testing sets. Standard Scalar was again fit on the pruned training set to scale down the values again.
 
    PCA was not used as it would have reduced interpretability, and we only have 12 features anyway, on a small dataset.
+
+3. Model Training from Scratch
+
+   We first show the linear equation, and then show the MSE equation, and how gradients require forward pass.
+   Testing with different learning rates.
+   Also added an early stop wherein if gradient step becomes too close to zero, ie < 1e-6, we can stop training before 1000 epochs
+
